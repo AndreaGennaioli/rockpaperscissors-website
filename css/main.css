@@ -140,6 +140,8 @@ a:link {
 	}
 	
 	.button {
-		text-align: center;		
+		clear: left;
+		float: none !important;
+		text-align: center !important;		
 	}
 }
