@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Rock Paper Scissors</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=, initial-scale=1.0">
+
+	<meta name="subject" content="RockPaperScissors">
+	<meta name="theme-color" content="#7289DA">
+	<meta property="og:title" content="RockPaperScissors Bot">
+	<meta property="og:url" content="https://rps.tk">
+	<meta property="og:image" content="https://proit.tk/src/logo/sterlex.png">
+	<meta property="og:description" content="Welcome to the official site of the sterlex bot!">
+	<link rel="icon" href="/src//logo/sterlex.png">
+	<link rel="stylesheet" type="text/css" href="/src/css/index.css">
+
+	<link rel="shortcut icon" href="./webicon.png" type="image/x-icon">
+
+	<script src="https://kit.fontawesome.com/0ce233a34f.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&amp;display=swap"
+		rel="stylesheet">
+
+	<style>
+		body {
+			background-color: #161622;
+			color: #7289DA;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			/* 			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ */
+			font-family: 'Poppins', sans-serif;
+		}
+
+		a:link {
+			text-decoration: none;
+		}
+
+		.grid {
+			margin-top: 15vh;
+			grid-template-rows: auto auto auto auto auto;
+		}
+
+		.title {
+			font-size: 3rem;
+			font-weight: bold !important;
+		}
+
+		.image {
+			height: 40%;
+			width: 40%;
+			border-radius: 100%;
+		}
+
+		.button {
+			text-align: center;
+			padding: 10px 35px 10px 35px;
+			color: white;
+			margin: 5px;
+			border: 2px solid #7289DA;
+			border-radius: 12px;
+
+			font-size: 1.5rem;
+			cursor: pointer;
+
+			transition: all .5s ease;
+		}
+
+		.button:hover {
+			font-size: 2rem;
+
+			color: white;
+		}
+
+		.social {
+			padding: 10px;
+			font-size: 30px;
+			width: 30px;
+			text-align: center;
+			text-decoration: none;
+			margin: 5px 2px;
+			border-radius: 50%;
+		}
+
+		.instagram {
+			background-size: 200% 200%;
+			background-position: 55% 55%;
+			background-image: linear-gradient(to bottom right, rgb(255, 0, 255), rgb(66, 0, 75));
+			color: white;
+			transition: all .5s ease;
+		}
+
+		.instagram:hover {
+			background-position: 100% 100%;
+			animation: gradient 5s ease;
+			color: white;
+		}
+
+		.github {
+			background-color: black;
+			color: white;
+			transition: all .5s ease;
+			-webkit-filter: brightness(100%);
+		}
+
+		.github:hover {
+			-webkit-filter: brightness(70%);
+			-webkit-transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-o-transition: all .5s ease;
+			-ms-transition: all .5s ease;
+			transition: all .5s ease;
+			color: white;
+		}
+
+		/* copy to clipboard */
+		.tooltip {
+			position: relative;
+			display: inline-block;
+		}
+
+		.tooltip .tooltiptext {
+			visibility: hidden;
+			width: 140px;
+			background-color: #555;
+			color: #fff;
+			text-align: center;
+			border-radius: 6px;
+			padding: 5px;
+			position: absolute;
+			z-index: 1;
+			bottom: 125%;
+			left: 50%;
+			margin-left: -75px;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+
+		.tooltip .tooltiptext::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: #555 transparent transparent transparent;
+		}
+
+		.tooltip:hover .tooltiptext {
+			visibility: visible;
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="grid">
+		<div class="grid-item">
+			<img class="image" src="./icon.png">
+		</div>
+		<div class="grid-item">
+			<h1 class="title">ROCKPAPERSCISSORS</h1>
+		</div>
+		<div class="grid-item buttons">
+			<a alt="invite the bot" title="invite the bot" target="_blank"
+				href="https://discord.com/oauth2/authorize?client_id=723877094920290305&scope=bot&permissions=1341644225"
+				class="button">INVITE THE BOT</a>
+			<a alt="join support server" title="join support server" target="_blank" href="https://discord.gg/XpwUGpt"
+				class="button">SUPPORT SERVER</a>
+		</div>
+		<div class="grid-item" style="margin-top: 40px; margin-left: -15px;color: white"><i class="fa fa-code"
+				aria-hidden="true"></i> bot by
+			<div class="tooltip"><span class="tooltiptext" id="myTooltip"><i class="fa fa-copy"></i> copy</span>
+				<font id="discord-tag" style="color: #7289DA; cursor: pointer">
+					andreagennaioli#6222</font>
+			</div>
+		</div>
+		<div class="grid-item buttons" style="margin-top: 40px;"">
+			<a target=" _blank" href="https://www.instagram.com/andreagennaioli/"><i
+				class="fa fa-instagram social instagram aria-hidden=" true"></i></a>
+			<a target="_blank" href="https://github.com/AndreaGennaioli"><i class="fa fa-github social github"
+					aria-hidden="true"></i></a>
+		</div>
+
+		<script>
+			document.getElementById('discord-tag').addEventListener('click', () => {
+				const el = document.createElement('textarea');
+				el.value = document.getElementById('discord-tag').innerText;
+				document.body.appendChild(el);
+				el.select();
+				document.execCommand('copy');
+				document.body.removeChild(el);
+
+			});
+		</script>
+
+</body>
+</div>
+
+</html>
