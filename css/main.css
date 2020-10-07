@@ -16,7 +16,7 @@ a:link {
 
 .grid {
 	margin-top: 15vh;
-	grid-template-rows: auto auto auto auto auto;
+	grid-template-rows: auto auto auto auto auto auto;
 }
 
 .title {
@@ -40,13 +40,23 @@ a:link {
 
 	font-size: 1.5rem;
 	cursor: pointer;
-
+	
 	transition: all .5s ease;
 }
 
 .button:hover {
 	font-size: 2rem;
+	
+	color: white;
+}
 
+.small {
+	font-size: 1.29rem;
+}
+
+.small:hover {
+	font-size: 1.5rem;
+	
 	color: white;
 }
 
