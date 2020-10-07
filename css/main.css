@@ -129,3 +129,17 @@ a:link {
 	visibility: visible;
 	opacity: 1;
 }
+
+@media only screen and (max-width: 600px) {
+	.buttons .button {
+		display: flex;
+	}
+
+	.title {
+		font-size: 14px;
+	}
+	
+	.button {
+		text-align: center;		
+	}
+}
