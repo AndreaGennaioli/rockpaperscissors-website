@@ -13,10 +13,11 @@
 	<meta property="og:title" content="RockPaperScissors Bot">
 	<meta property="og:url" content="https://www.rps-bot.tk">
 	<meta property="og:image" content="https://andreagennaioli.github.io/rockpaperscissors/img/webicon.png">
-	<meta property="og:description" content="Play with your friends at rock paper scissors with RockPaperScissors Bot for Discord.">
+	<meta property="og:description"
+		content="Play with your friends at rock paper scissors with RockPaperScissors Bot for Discord.">
+
+
 	<link rel="icon" href="./img/webicon.png">
-
-
 	<link rel="shortcut icon" href="./img/webicon.png" type="image/x-icon">
 
 	<script src="https://kit.fontawesome.com/0ce233a34f.js" crossorigin="anonymous"></script>
@@ -45,16 +46,15 @@
 		</div>
 		<div class="grid-item buttons" style="margin-top: 40px;">
 			<a alt="vote on top.gg" title="vote on top.gg" target="_blank"
-				href="https://top.gg/bot/723877094920290305/vote"
-				class="button small">VOTE ON TOP.GG</a>
-			<a alt="vote on dbots.co" title="vote on dbots.co" target="_blank" href="https://dbots.co/bots/723877094920290305/vote"
-				class="button small">VOTE ON DBOTS.CO</a>
+				href="https://top.gg/bot/723877094920290305/vote" class="button small">VOTE ON TOP.GG</a>
+			<a alt="vote on dbots.co" title="vote on dbots.co" target="_blank"
+				href="https://dbots.co/bots/723877094920290305/vote" class="button small">VOTE ON DBOTS.CO</a>
 		</div>
 		<div class="grid-item" style="margin-top: 40px; margin-left: -15px;color: white"><i class="fa fa-code"
 				aria-hidden="true"></i> bot by
 			<div class="tooltip"><span class="tooltiptext" id="myTooltip"><i class="fa fa-copy"></i> copy</span>
-				<font id="discord-tag" style="color: #7289DA; cursor: pointer">
-					andreagennaioli#6222</font>
+				<span id="discord-tag" style="color: #7289DA; cursor: pointer">
+					andreagennaioli#6222</span>
 			</div>
 		</div>
 		<div class="grid-item buttons" style="margin-top: 40px;"">
@@ -64,17 +64,33 @@
 					aria-hidden="true"></i></a>
 		</div>
 
-		<script>
-			document.getElementById('discord-tag').addEventListener('click', () => {
-				const el = document.createElement('textarea');
-				el.value = document.getElementById('discord-tag').innerText;
-				document.body.appendChild(el);
-				el.select();
-				document.execCommand('copy');
-				document.body.removeChild(el);
+	</div>
+	<div class="grid-item" style="margin-top: 40px;
+		margin-left: -15px;
+		color: white;
+		width:max-content;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		bottom: 10px;">
+		Website template inspired by
+		<div class="tooltip"><span class="tooltiptext" id="myTooltip"><i class="fa fa-link" aria-hidden="true"></i> open</span>
+			<a href="https://sterlex.tk/" target="_blank" id="sterlex" style="color: #7289DA; cursor: pointer">
+				sterlex.tk</a>
+		</div>
+	</div>
 
-			});
-		</script>
+	<script>
+		document.getElementById('discord-tag').addEventListener('click', () => {
+			const el = document.createElement('textarea');
+			el.value = document.getElementById('discord-tag').innerText;
+			document.body.appendChild(el);
+			el.select();
+			document.execCommand('copy');
+			document.body.removeChild(el);
+
+		});
+	</script>
 
 </body>
 </div>
