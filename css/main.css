@@ -168,6 +168,6 @@ a:link {
 	.iinfo {
 		position: relative;
 		margin-bottom: 0;
-		bottom: 0;
+		bottom: 0 !important !important;
 	}
 }
