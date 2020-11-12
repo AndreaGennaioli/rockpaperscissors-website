@@ -154,4 +154,7 @@ a:link {
 		float: none !important;
 		text-align: center !important;		
 	}
+	.iinfo {
+		position: unset;
+	}
 }
