@@ -140,6 +140,17 @@ a:link {
 	opacity: 1;
 }
 
+.iinfo {
+	margin-top: 40px;
+	margin-left: -15px;
+	color: white;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: 10px;
+}
+
 @media only screen and (max-width: 600px) {
 	.buttons .button {
 		display: flex;
