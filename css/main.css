@@ -141,14 +141,14 @@ a:link {
 }
 
 .iinfo {
-	margin-top: 40px;
-	margin-left: -15px;
-	color: white;
-	width: max-content;
-	margin-left: auto;
-	margin-right: auto;
-	position: absolute;
-	bottom: 10px;
+	margin-top: 40px !important;
+	margin-left: -15px !important;
+	color: white !important;
+	width: max-content !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	position: absolute !important;
+	bottom: 10px !important;
 }
 
 @media only screen and (max-width: 600px) {
