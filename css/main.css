@@ -167,5 +167,6 @@ a:link {
 	}
 	.iinfo {
 		position: relative;
+		margin-top: 0;
 	}
 }
